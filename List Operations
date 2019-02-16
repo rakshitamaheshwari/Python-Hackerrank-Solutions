@@ -1,0 +1,19 @@
+N = int(input())
+    l = []
+    for i in range(N):
+        operation,*args = input().split()
+        values = list(map(int,args))
+        if operation == 'insert':
+            l.insert(values[0],values[1])
+        elif operation == 'append':
+            l.append(values[0])
+        elif operation == 'remove':
+            l.remove(values[0])
+        elif operation == 'print':
+            print(l)
+        elif operation == 'sort':
+            l.sort()
+        elif operation == 'reverse':
+            l.reverse()
+        elif operation == 'pop':
+            l.pop()
