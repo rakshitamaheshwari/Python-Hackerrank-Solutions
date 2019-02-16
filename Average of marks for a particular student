@@ -1,0 +1,12 @@
+n = int(input())
+    student_marks = {}
+    for _ in range(n):
+        name, *args = input().split()
+        scores = list(map(float, args))
+        student_marks[name] = scores
+    name1 = input()
+    for i in student_marks:
+        if i == name1:
+            p = (sum(student_marks[i])/3)
+           
+    print("{0:.2f}".format(p))
