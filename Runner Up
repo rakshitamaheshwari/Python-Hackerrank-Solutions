@@ -1,0 +1,10 @@
+n = int(input())
+    l = list(map(int,input().split(' ')))
+    c = l.count(max(l))
+    if c > 1 :
+        for i in range(c-1):
+            l.remove(max(l))
+    l.sort()
+    print(l[-2])
+    
+
