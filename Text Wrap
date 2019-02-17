@@ -1,0 +1,9 @@
+import textwrap
+def wrap(string, max_width):
+    for i in range((len(string)//max_width)+1):
+        print(string[:max_width:])
+        string = string[max_width::]
+    return string
+string, max_width = input(), int(input())
+result = wrap(string, max_width)
+print(result)
