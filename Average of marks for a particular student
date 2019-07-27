@@ -10,3 +10,24 @@ n = int(input())
             p = (sum(student_marks[i])/3)
            
     print("{0:.2f}".format(p))
+    
+    
+    
+    
+    OR
+    
+    
+
+n=input()
+l=[]
+d={}
+for i in range(int(n)):
+    l=input().split()
+    for j in range(1,len(l)):
+        l[j]=float(l[j])
+    d[l[0]]=l[1:]
+name=input()
+print(d)
+print("%.2f" %(sum(d[name])/3))
+
+
