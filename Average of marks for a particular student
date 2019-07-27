@@ -27,7 +27,6 @@ for i in range(int(n)):
         l[j]=float(l[j])
     d[l[0]]=l[1:]
 name=input()
-print(d)
 print("%.2f" %(sum(d[name])/3))
 
 
