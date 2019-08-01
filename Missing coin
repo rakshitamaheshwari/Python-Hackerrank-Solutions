@@ -1,0 +1,8 @@
+n=input()
+k=input().split()
+r=map(lambda i: int(i) ,k)
+l=list(r)
+for i in l:
+    if l.count(i)%2!=0:
+        print(i)
+        break
